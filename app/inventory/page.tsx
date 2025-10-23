@@ -187,12 +187,12 @@ export default function InventoryPage() {
               <div
                 key={`${item.inventoryIndex}`}
                 className="bg-card rounded-lg border-2 overflow-hidden transition-transform hover:scale-105"
-                style={{ borderColor: RARITY_COLORS[item.itemData.rarity] }}
+                style={{ borderColor: RARITY_COLORS[item.itemData.rarity as keyof typeof RARITY_COLORS] }}
               >
                 {/* Rarity bar */}
                 <div
                   className="h-2"
-                  style={{ backgroundColor: RARITY_COLORS[item.itemData.rarity] }}
+                  style={{ backgroundColor: RARITY_COLORS[item.itemData.rarity as keyof typeof RARITY_COLORS] }}
                 ></div>
 
                 {/* Item Image */}
@@ -223,8 +223,8 @@ export default function InventoryPage() {
                     <div
                       className="text-[10px] px-2 py-1 rounded-full font-bold uppercase"
                       style={{
-                        backgroundColor: `${RARITY_COLORS[item.itemData.rarity]}20`,
-                        color: RARITY_COLORS[item.itemData.rarity],
+                        backgroundColor: `${RARITY_COLORS[item.itemData.rarity as keyof typeof RARITY_COLORS]}20`,
+                        color: RARITY_COLORS[item.itemData.rarity as keyof typeof RARITY_COLORS],
                       }}
                     >
                       {RARITY_LABELS[item.itemData.rarity]}
