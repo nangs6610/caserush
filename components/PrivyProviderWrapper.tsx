@@ -23,7 +23,9 @@ export default function PrivyProviderWrapper({
         },
         loginMethods: ['wallet', 'email', 'google'],
         embeddedWallets: {
-          createOnLogin: 'users-without-wallets',
+          ethereum: {
+            createOnLogin: 'users-without-wallets',
+          },
         },
         defaultChain: currentChain,
         supportedChains: [currentChain],

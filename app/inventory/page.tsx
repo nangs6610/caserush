@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { usePrivy, useWallets } from '@privy-io/react-auth';
-import { InventoryItem, RARITY_COLORS, RARITY_LABELS, CaseData } from '@/types';
+import { InventoryItem, RARITY_COLORS, RARITY_LABELS, CaseData, CaseItem } from '@/types';
 import { getCaseData } from '@/lib/caseData';
 import Image from 'next/image';
 
@@ -11,7 +11,7 @@ interface OnChainItem {
   itemId: number;
   timestamp: number;
   redeemed: boolean;
-  itemData: CaseData; // From caseData
+  itemData: CaseItem; // From caseData
 }
 
 export default function InventoryPage() {
