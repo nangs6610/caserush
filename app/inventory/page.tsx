@@ -11,7 +11,7 @@ interface OnChainItem {
   itemId: number;
   timestamp: number;
   redeemed: boolean;
-  itemData: any; // From caseData
+  itemData: CaseData; // From caseData
 }
 
 export default function InventoryPage() {
