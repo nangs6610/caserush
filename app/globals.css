@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Custom Roboto Font */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/images/textstyle/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/images/textstyle/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* CaseRush Black + Gold Theme */
+  --background: #0B0C0E;
+  --card-bg: #121316;
+  --gold: #C9A227;
+  --gold-bright: #F2C94C;
+  --text-primary: #FFFFFF;
+  --text-muted: #C9CDD6;
+  --success: #36B37E;
+  --error: #D64B4B;
+
+  /* Rarity Colors */
+  --rarity-consumer: #B0C3D9;
+  --rarity-industrial: #5E98D9;
+  --rarity-mil-spec: #4B69FF;
+  --rarity-restricted: #8847FF;
+  --rarity-classified: #D32CE6;
+  --rarity-covert: #EB4B4B;
+  --rarity-special: #FFD700;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-card: var(--card-bg);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-text-primary: var(--text-primary);
+  --color-text-muted: var(--text-muted);
+  --color-success: var(--success);
+  --color-error: var(--error);
+
+  /* Rarity colors */
+  --color-consumer: var(--rarity-consumer);
+  --color-industrial: var(--rarity-industrial);
+  --color-milspec: var(--rarity-mil-spec);
+  --color-restricted: var(--rarity-restricted);
+  --color-classified: var(--rarity-classified);
+  --color-covert: var(--rarity-covert);
+  --color-special: var(--rarity-special);
+
+  --font-sans: 'Roboto', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}

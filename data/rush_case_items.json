@@ -1,0 +1,77 @@
+{
+  "caseName": "Degen Case",
+  "caseImage": "/images/case/rush_case.png",
+  "caseDescription": "Open the Degen Case for a chance to win exclusive CS:GO skins!",
+  "items": [
+    {
+      "id": 1,
+      "name": "Legendary Knife",
+      "weapon": "Karambit",
+      "skin": "Fade",
+      "rarity": "special",
+      "image_url": "/images/items/karambit fade.png",
+      "probability": 0.0002,
+      "floor_price": 10.0
+    },
+    {
+      "id": 2,
+      "name": "Rare Knife",
+      "weapon": "Butterfly Knife",
+      "skin": "Tiger Tooth",
+      "rarity": "special",
+      "image_url": "/images/items/tiger tooth.png",
+      "probability": 0.005,
+      "floor_price": 1.0
+    },
+    {
+      "id": 3,
+      "name": "Covert Rifle",
+      "weapon": "AK-47",
+      "skin": "Bloodsport",
+      "rarity": "covert",
+      "image_url": "/images/items/bloodsport.png",
+      "probability": 0.015,
+      "floor_price": 0.25
+    },
+    {
+      "id": 4,
+      "name": "Classified Rifle",
+      "weapon": "M4A4",
+      "skin": "Neo-Noir",
+      "rarity": "classified",
+      "image_url": "/images/items/neo-noir.png",
+      "probability": 0.04,
+      "floor_price": 0.1
+    },
+    {
+      "id": 5,
+      "name": "Restricted AWP",
+      "weapon": "AWP",
+      "skin": "Chromatic Aberration",
+      "rarity": "restricted",
+      "image_url": "/images/items/chrom aberration.png",
+      "probability": 0.10,
+      "floor_price": 0.025
+    },
+    {
+      "id": 6,
+      "name": "Mil-Spec Pistol",
+      "weapon": "Desert Eagle",
+      "skin": "Night",
+      "rarity": "mil-spec",
+      "image_url": "/images/items/night.png",
+      "probability": 0.24,
+      "floor_price": 0.005
+    },
+    {
+      "id": 7,
+      "name": "Consumer Pistol",
+      "weapon": "P250",
+      "skin": "Sand Dune",
+      "rarity": "consumer",
+      "image_url": "/images/items/sand dune.png",
+      "probability": 0.5998,
+      "floor_price": 0.0005
+    }
+  ]
+}
